@@ -30,13 +30,25 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+**A: Class components are a much more robust way of handling components. Unlike functional components, in here we do have access to some special methods, some of them being the lifecaycle methods, such as `componentDidMount()` and `componentDidUpdate()`. These types of methods gives us access to some more creative ways on handling how a component behaves without the need of hooks.**
+
 2. Describe the different phases of the component lifecycle.
+
+**A: There are 3 phases of the component lifecycle, which are the Mounting phase, the Updating phase, and Unmounting phase. During the Mounting phase, is where you the component will call for the constructor function, which is what will help gather the necessary data, such as the props data when a component is called, as well as the necessary methods and such for the component when using a class. This phase is basically when we put the elements into the DOM. The Updating phase, as the name suggests, is when there is any type of change on the component. This could be a change in the data from a prop, or a force refresh of the component. This phase is what helps keep the component always in sync with any data we may be calling. Last, but not least, the Unmounting phase. This is used whenever we want to remove a component from the DOM. As the name implies, this is in case we have no use of a certain component in a certain are of the app, so we can just remove it, helping with boosting performance by not adding extra things into the DOM.**
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+**A: There are 3 main class component lifecycle methods, `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()`. The `componentDidMount()` method will be called when the component first renders, so it is called only once. This is called once your component is already placed on the DOM, so it happens after the `render()` method. The `componentDidUpdate()` method is called when there is a change of any kind in the component's data, which it can be props or state data. This is useful when you need your component to constantly update to get new data, most commonly from an API request. You must make sure, however, to just call certain function when you know what data needs to change(by using conditional statements), otherwise you run the risk of getting infinite loops. Lastly, the `componentWillUnmount()` method is used when you want to remove the component from the DOM. This is very helpful when you want a certain component removed from view(for example, a notification) that will not longer be needed once the user decides to close it.**
+
 4. Define stateful logic.
 
+**A: Stateful logic is basically what tells the App what to do. As the name implies, is when you create a "logic" through functions by using states. The functions you create is the logic that you use to make a certain action happen. For example, a form may have a function that will handle how the submission process is handled, and more than likely, it will need a validation function to ensure the form does not submit wrong or empty data. This is a type of logic. Then, since the form itself uses states to store the data from each field, that is the stateful part of stateful logic. So, in other words, stateful logic is basically creating functions that uses states.**
+
 5. Describe how to test a React component with React Testing Library.
+
+**A:**
+
+---
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -54,8 +66,8 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Basic set up**
 
-- [ ] Create a forked copy of this project
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a forked copy of this project
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
 - [ ] [OPTIONAL] Create a new branch: git checkout -b `<firstName-lastName>`. If you choose to do this, you will need to merge your working branch into the master branch and push your final code to master in order for the submission to work with CodeGrade.
 
 \_Note: Ignore the `mocks` directory. That is in place for the CodeGrade tests
