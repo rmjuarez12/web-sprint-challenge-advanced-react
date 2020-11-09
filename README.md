@@ -46,7 +46,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 5. Describe how to test a React component with React Testing Library.
 
-**A:**
+**A: In order to run a test for a React component, we will have to through 3 stages, which are Arrange, Act, and Assert. A few things to keep in mind before we work on those 3 stages. The component needs to be a functional component rather than a class component. The test does will not run on classes because that's an implementation detail, not a rendered element. Also, the very first thing to do before doing a test, is doing the necessary imports. Much like any library used in React, it is important to import the necessary modules and hooks, or our App will show an error. Ok, now that we have those out of the way, and we have imported the necessary moduiles/hooks, we can begin working on the Arrange stage. During this stage, we will call a render function, so that we can render the component we will be running the test on. The next stage is the Act stage. In here we can setup several variables that will hold some specific elements(or rendered text or such) on what to check for the assertions. This leads me to the last stage, the Assert stage. In here is where use assertions in which we will use the variables created in the Act stage in order to run the test and ensure that the rule of the assertion is met.**
 
 ---
 
@@ -90,8 +90,8 @@ Go [here](./CodeGrade-webhook.md) to setup the CodeGrade webhook before you begi
 
 **Starting your test runner**
 
-- [ ] In the final terminal window, make sure you are in the `client` folder still
-- [ ] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
+- [x] In the final terminal window, make sure you are in the `client` folder still
+- [x] Start the test runner with `npm test` (I recommend doing this only when you're testing - any change in your app will make the tests run, and that could eat up your computer power)
 
 **Commit and Push OFTEN!**
 
@@ -118,14 +118,14 @@ Nothing needs to be done here. You _will_ have to navigate to the cart page in y
 
 The form is working, but it is currently controlled by local stateful logic. We want to control this form with a custom hook.
 
-- [ ] Build a custom hook called `useForm`, and use it in your CheckoutForm component to control the form's stateful logic
+- [x] Build a custom hook called `useForm`, and use it in your CheckoutForm component to control the form's stateful logic
 
 _Note: You built a useForm hook in the guided project this week. You will probably need to use that as a guide to complete this step. However, try and build it out first before you peek at the guided project. And *do not* copy/paste directly from the guided project!_
 
 #### Testing the Checkout Form
 
-- [ ] Build out the tests listed in `CheckoutForm.test.js`. You will need to make sure they are testing what the test title implies they are testing
-- [ ] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working
+- [x] Build out the tests listed in `CheckoutForm.test.js`. You will need to make sure they are testing what the test title implies they are testing
+- [x] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working
 
 <hr/>
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
